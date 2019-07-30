@@ -24,7 +24,7 @@ public class ArrayTools {
 
     public static void main(String[] args) {
         int[] arr = new int[10];
-        ArrayTools.fillArray(arr);
+        fillArray(arr);
         System.out.println(Arrays.toString(arr));
         ArrayTools.printArray(arr);
     }
