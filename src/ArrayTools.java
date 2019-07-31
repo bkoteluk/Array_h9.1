@@ -3,11 +3,13 @@ import java.util.Random;
 
 public class ArrayTools {
 
-    private static void fillArray(int[] arr) {
+    private static int[] fillArray() {
+        int[] array = new int[10];
         Random random = new Random();
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(10);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(10);
         }
+        return array;
     }
 
     private static void printArray(int[] arr) {
@@ -23,9 +25,8 @@ public class ArrayTools {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[10];
-        fillArray(arr);
-        System.out.println(Arrays.toString(arr));
-        printArray(arr);
+        int[] array = fillArray();
+        System.out.println(Arrays.toString(array));
+        printArray(array);
     }
 }
